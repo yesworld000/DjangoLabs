@@ -1,0 +1,12 @@
+{
+    "json.schemas": [
+        {
+            "fileMatch": [
+                "/myfile"
+            ],
+            "url": "schemaURL"
+        }
+    
+    ],
+    "python.pythonPath": "C:\\Users\\jam5383\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe"
+}
