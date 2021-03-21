@@ -38,7 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'main'
+    'main',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
@@ -122,3 +123,8 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = 'static'
 # STATICFILES_DIRS =  (os.path. join(BASE_DIR, ('static'), ))
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': ('rest_framework.permissions.IsAuthenticated',),
+    # 'DEFAULT_AUTHENTICATION_CLASSES': ('rest_framework_jwt.authentication.JWTAuthentication',)
+}
